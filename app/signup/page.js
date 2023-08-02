@@ -28,12 +28,15 @@ const SignUp = () =>{
 
     return (
         <div className="flex flex-col items-center">
+            {/* Header */}
             <img onClick={()=>router.back()} src="/backArrow.svg" alt="arrow" className="cursor-pointer self-start mt-5 ml-5 w-[24px]" />
             <img src="logo.svg" alt="logo" className="w-[72px]" />
             <div className="mt-[12px] relative w-[165px]">
                 <p className="z-20 relative font-kumbh text-[#69235B] text-lg not-italic font-bold">Sign up with Email</p>
                 <div className="z-0 absolute bottom-[3.5px] -right-2 w-[56px] h-[8px] bg-[#ffc746]"></div>
             </div>
+
+            {/* Form */}
             <p className="mt-[16px] w-[70%] font-inter text-[#69235B] text-center text-sm not-italic font-light leading-5 tracking-[0.1px]">Welcome back! Sign in using your social account or email to continue us</p>
             <div className="mt-[60px] flex flex-col items-start w-[90%] md:w-[375px]">
                 <p className={`font-inter text-[#69235B] text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px]`}>Your name</p>

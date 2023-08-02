@@ -20,6 +20,7 @@ const SignIn = () =>{
 
     return (
         <div className="flex flex-col items-center">
+            {/* Header */}
             <img onClick={()=>router.back()} src="/backArrow.svg" alt="arrow" className="cursor-pointer self-start mt-5 ml-5 w-[24px]" />
             <img src="logo.svg" alt="logo" className="w-[72px]" />
             <div className="mt-[12px] relative">
@@ -27,6 +28,8 @@ const SignIn = () =>{
                 <div className="z-0 absolute bottom-[3.5px] left-0 w-[56px] h-[8px] bg-[#ffc746]"></div>
             </div>
             <p className="mt-[16px] w-[70%] font-inter text-[#69235B] text-center text-sm not-italic font-light leading-5 tracking-[0.1px]">Welcome back! Sign in using your social account or email to continue us</p>
+
+            {/* Social Accounts */}
             <div className="mt-[30px] flex items-center gap-[20px]">
                 <div className="hover:bg-[#ffc746] hover:border-[#ffc746] border-black cursor-pointer flex items-center justify-center border w-[48px] h-[48px] rounded-full">
                     <img src="/facebookLogo.svg" alt="fb" />
@@ -38,11 +41,15 @@ const SignIn = () =>{
                     <img src="/appleBlackLogo.svg" alt="fb" />
                 </div>
             </div>
+
+            {/* Or Separater */}
             <div className="mt-[30px] flex items-center gap-[15px] w-[90%] md:w-[375px]">
                 <hr className="h-[1px] w-[43%] bg-[#CDD1D0]"/>
                 <p className="font-inter text-[#69235B] text-center text-sm not-italic font-thin leading-[14px] tracking-[0.1px]">OR</p>
                 <hr className="h-[1px] w-[43%] bg-[#CDD1D0]"/>
             </div>
+
+            {/* Form */}
             <div className="mt-[30px] flex flex-col items-start w-[90%] md:w-[375px]">
                 <p className={`font-inter text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px] ${validMail? 'text-[#69235B]' : 'text-[#FF2D1B]'}`}>Your email</p>
                 <input onChange={HandleInputEmail} value={email} type="text" className={`focus:outline-none w-full border-b px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4 ${validMail? 'border-b-[#CDD1D0]' : 'border-b-[#FF2D1B]'}`} />
