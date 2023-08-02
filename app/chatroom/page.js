@@ -1,5 +1,5 @@
 
-const ChatRoom = () =>{
+const ChatRoom = ()=>{
     return (
         <div>
 
