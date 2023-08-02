@@ -39,7 +39,7 @@ const ChatRoom = () =>{
 
             {/* Main Section - page 1*/}
             {page===1 ? 
-                <div className="mt-[25px] flex flex-col items-center w-[90%]">
+                <div className="mt-[25px] flex flex-col items-center w-[90%] mb-[180px]">
                     <div className="self-start flex items-start gap-2">
                         <img src="/avatar.svg" alt="avatar" className="w-[40px] h-[40px]"/>
                         <p className={`p-4 max-w-[80%] md:max-w-[60%] rounded-xl rounded-tl-none bg-[#69235B] text-white text-xs not-italic font-normal leading-4 tracking-[0.12px] font-inter`}>
@@ -59,19 +59,19 @@ const ChatRoom = () =>{
                         <img src="/warning.svg" alt="warning" />
                         Limitation: May struggle with complex queries.
                     </p>
-                    <div className="self-start mt-[40px] flex flex-col items-end">
+                    <div className="self-start mt-[40px] flex flex-col items-center">
                         <div className="flex items-center gap-2">
                             <img src="/avatar.svg" alt="avatar" className="w-[40px] h-[40px]"/>
                             <p className={`p-4 max-w-[80%] md:max-w-[60%] rounded-xl rounded-tl-none bg-[#69235B] text-white text-xs not-italic font-normal leading-4 tracking-[0.12px]`}>Let your curiosity guide you; wishing you blessings and enlightenment 🕉️</p>
                         </div>
-                        <p className="self-end mt-[8px] font-inter text-[#797C7B] text-right text-[10px] not-italic font-thin leading-[10px]">09:25 AM</p>
+                        <p className="self-end md:self-auto md:ml-[170px] mt-[8px] font-inter text-[#797C7B] text-right text-[10px] not-italic font-thin leading-[10px]">09:25 AM</p>
                     </div>
                 </div>
             : "" }
 
             {/* Main Section - page 2*/}
             {page===2 ? 
-                <div className="mt-[25px] flex flex-col items-center w-[90%]">
+                <div className="mt-[25px] flex flex-col items-center w-[90%] mb-[180px]">
                     <p className="font-raleway text-[#69235B] text-right text-xs not-italic font-medium leading-3">Today</p>
                     <p className="self-end mt-[25px] p-4 bg-[#FBBC04] rounded-xl rounded-tr-none font-inter text-white text-right text-xs not-italic font-normal leading-3 tracking-[0.12px]">Hello! How are you?</p>
                     <p className="self-end mt-[8px] font-inter text-[#797C7B] text-right text-[10px] not-italic font-thin leading-[10px]">09:25 AM</p>
@@ -102,10 +102,12 @@ const ChatRoom = () =>{
             : "" }
 
             {/* Input Section */}
-            <div className="w-[90%] md:w-[70%] max-w-[800px] mt-[110px] mb-[25px] flex items-center bg-white rounded-[30px] p-4 px-7 shadow-[5px_4px_20px_0px_rgba(0,0,0,0.13)]">
-                <input type="text" className="w-[95%] focus:outline-none pr-4 py-2 font-inter text-black placeholder:text-[#A1A1A1] text-[13px] not-italic font-normal leading-[normal] " placeholder="Write your message"/>
-                <img src="/send.svg" alt="send" className="cursor-pointer" />
-                <img src="/microphone.svg" alt="mic" className="cursor-pointer" />
+            <div className="w-full fixed bottom-0 bg-[#F8F8FF] pb-8 pt-2">
+                <div className="mx-auto w-[90%] md:w-[70%] max-w-[800px] flex items-center bg-white rounded-[30px] p-4 px-7 shadow-[5px_4px_20px_0px_rgba(0,0,0,0.13)]">
+                    <input type="text" className="w-[95%] focus:outline-none pr-4 py-2 font-inter text-black placeholder:text-[#A1A1A1] text-[13px] not-italic font-normal leading-[normal] " placeholder="Write your message"/>
+                    <img src="/send.svg" alt="send" className="cursor-pointer" />
+                    <img src="/microphone.svg" alt="mic" className="cursor-pointer" />
+                </div>
             </div>
 
         </div>

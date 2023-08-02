@@ -31,8 +31,8 @@ const SignUp = () =>{
             {/* Header */}
             <img onClick={()=>router.back()} src="/backArrow.svg" alt="arrow" className="cursor-pointer self-start mt-5 ml-5 w-[24px]" />
             <img src="logo.svg" alt="logo" className="w-[72px]" />
-            <div className="mt-[12px] relative w-[165px]">
-                <p className="z-20 relative font-kumbh text-[#69235B] text-lg not-italic font-bold">Sign up with Email</p>
+            <div className="mt-[12px] flex flex-col relative w-[12.15%]">
+                <p className="z-20 font-kumbh text-[#69235B] text-lg not-italic font-bold">Sign up with Email</p>
                 <div className="z-0 absolute bottom-[3.5px] -right-2 w-[56px] h-[8px] bg-[#ffc746]"></div>
             </div>
 
