@@ -50,7 +50,7 @@ const SignUp = () =>{
                 <input onChange={HandleInputPass} value={confirmPass} type="password" className={`focus:outline-none w-full border-b px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4 ${validPass? 'border-b-[#CDD1D0]' : 'border-b-[#FF2D1B]'}`} />
                 {validPass ? "" : <p className="mt-[8px] self-end font-inter text-[#FF2D1B] text-xs not-italic font-thin leading-3">Passwords do not match</p> }
             </div>
-            <button onClick={()=>router.push('/chatroom')} disabled={validPass && validMail && password?.length>0 && name?.length>0 ? false : true} className="mt-[118px] h-[54px] rounded-[10px] bg-[#ffc746] disabled:bg-[#FBDC94] w-[90%] md:w-[340px] font-kumbh text-[#69235B] disabled:text-[#EDA0A8] text-center text-xl not-italic font-medium leading-[normal]">Create an account</button>
+            <button onClick={()=>router.push('/chatroom')} disabled={validPass && validMail && password?.length>0 && name?.length>0 && confirmPass?.length>0 ? false : true} className="mt-[118px] h-[54px] rounded-[10px] bg-[#ffc746] disabled:bg-[#FBDC94] w-[90%] md:w-[340px] font-kumbh text-[#69235B] disabled:text-[#EDA0A8] text-center text-xl not-italic font-medium leading-[normal]">Create an account</button>
         </div>
     );
 }
