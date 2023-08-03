@@ -24,14 +24,14 @@ const ChatRoom = () =>{
                     </div>
                 </div>
                 <div className="flex items-center gap-4">
-                    <button onClick={()=>{lang==='english'?setLang('hindi'):setLang('english')}} className="font-mukta text-base not-italic font-[275] leading-4 flex items-center">
+                    <button onClick={()=>{lang==='english'?setLang('hindi'):setLang('english')}} className="overflow-hidden font-mukta text-base not-italic font-[275] leading-4 flex items-center">
                         <p className={lang==='english' ? 'overflow-hidden text-[#FBBC04]' : 'overflow-hidden text-[#FBDC94]'}>A</p>
-                        <p className="text-[#FBDC94]">/</p>
+                        <p className="overflow-hidden text-[#FBDC94]">/</p>
                         <p className={lang==='hindi' ? 'overflow-hidden text-[#FBBC04]' : 'overflow-hidden text-[#FBDC94]'}>क</p>
                     </button>
-                    <button onClick={()=>{page===1?setPage(2):setPage(1)}} className="font-mukta text-base not-italic font-[275] leading-4 flex items-center">
+                    <button onClick={()=>{page===1?setPage(2):setPage(1)}} className="overflow-hidden font-mukta text-base not-italic font-[275] leading-4 flex items-center">
                         <p className={page===1 ? 'overflow-hidden text-[#FBBC04]' : 'overflow-hidden text-[#FBDC94]'}>1</p>
-                        <p className="text-[#FBDC94]">/</p>
+                        <p className="overflow-hidden text-[#FBDC94]">/</p>
                         <p className={page===2 ? 'overflow-hidden text-[#FBBC04]' : 'overflow-hidden text-[#FBDC94]'}>2</p>
                     </button>
                 </div>
