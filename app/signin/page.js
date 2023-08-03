@@ -45,16 +45,16 @@ const SignIn = () =>{
             {/* Or Separater */}
             <div className="mt-[30px] flex items-center gap-[15px] w-[90%] md:w-[375px]">
                 <hr className="h-[1px] w-[43%] bg-[#CDD1D0]"/>
-                <p className="font-inter text-[#69235B] text-center text-sm not-italic font-thin leading-[14px] tracking-[0.1px]">OR</p>
+                <p className="overflow-hidden font-inter text-[#69235B] text-center text-sm not-italic font-thin leading-[14px] tracking-[0.1px]">OR</p>
                 <hr className="h-[1px] w-[43%] bg-[#CDD1D0]"/>
             </div>
 
             {/* Form */}
             <div className="mt-[30px] flex flex-col items-start w-[90%] md:w-[375px]">
-                <p className={`font-inter text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px] ${validMail? 'text-[#69235B]' : 'text-[#FF2D1B]'}`}>Your email</p>
+                <p className={`overflow-hidden font-inter text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px] ${validMail? 'text-[#69235B]' : 'text-[#FF2D1B]'}`}>Your email</p>
                 <input onChange={HandleInputEmail} value={email} type="text" className={`focus:outline-none w-full border-b px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4 ${validMail? 'border-b-[#CDD1D0]' : 'border-b-[#FF2D1B]'}`} />
                 {validMail ? "" : <p className="mt-[8px] self-end font-inter text-[#FF2D1B] text-xs not-italic font-thin leading-3">Invalid email address</p> }
-                <p className={`mt-[30px] font-inter text-[#69235B] text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px]`}>Password</p>
+                <p className={`overflow-hidden mt-[30px] font-inter text-[#69235B] text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px]`}>Password</p>
                 <input onChange={(e)=>setPassword(e.target.value)} value={password} type="password" className="focus:outline-none w-full border-b border-b-[#CDD1D0] px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4" />
             </div>
             <button onClick={()=>router.push('/chatroom')} disabled={validMail && password?.length>0 ? false : true} className="mt-[157px] h-[54px] rounded-[10px] bg-[#ffc746] disabled:bg-[#FBDC94] w-[90%] md:w-[340px] font-kumbh text-[#69235B] disabled:text-[#EDA0A8] text-center text-xl not-italic font-medium leading-[normal]">Login</button>

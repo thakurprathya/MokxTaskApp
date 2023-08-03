@@ -33,20 +33,20 @@ const SignUp = () =>{
             <img src="logo.svg" alt="logo" className="w-[72px]" />
             <div className="mt-[12px] flex flex-col relative w-[12.15%]">
                 <p className="z-20 font-kumbh text-[#69235B] text-lg not-italic font-bold">Sign up with Email</p>
-                <div className="z-0 absolute bottom-[3.5px] -right-2 w-[56px] h-[8px] bg-[#ffc746]"></div>
+                <div className="z-0 absolute bottom-[3.5px] -right-1 w-[56px] h-[8px] bg-[#ffc746]"></div>
             </div>
 
             {/* Form */}
             <p className="mt-[16px] w-[70%] font-inter text-[#69235B] text-center text-sm not-italic font-light leading-5 tracking-[0.1px]">Welcome back! Sign in using your social account or email to continue us</p>
             <div className="mt-[60px] flex flex-col items-start w-[90%] md:w-[375px]">
-                <p className={`font-inter text-[#69235B] text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px]`}>Your name</p>
+                <p className={`overflow-hidden font-inter text-[#69235B] text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px]`}>Your name</p>
                 <input onChange={(e)=>setName(e.target.value)} value={name} type="text" className="focus:outline-none w-full border-b border-b-[#CDD1D0] px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4" />
-                <p className={`mt-[30px] font-inter text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px] ${validMail? 'text-[#69235B]' : 'text-[#FF2D1B]'}`}>Your email</p>
+                <p className={`overflow-hidden mt-[30px] font-inter text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px] ${validMail? 'text-[#69235B]' : 'text-[#FF2D1B]'}`}>Your email</p>
                 <input onChange={HandleInputEmail} value={email} type="text" className={`focus:outline-none w-full border-b px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4 ${validMail? 'border-b-[#CDD1D0]' : 'border-b-[#FF2D1B]'}`} />
                 {validMail ? "" : <p className="mt-[8px] self-end font-inter text-[#FF2D1B] text-xs not-italic font-thin leading-3">Invalid email address</p> }
-                <p className={`mt-[30px] font-inter text-[#69235B] text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px]`}>Password</p>
+                <p className={`overflow-hidden mt-[30px] font-inter text-[#69235B] text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px]`}>Password</p>
                 <input onChange={(e)=>setPassword(e.target.value)} value={password} type="password" className="focus:outline-none w-full border-b border-b-[#CDD1D0] px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4" />
-                <p className={`mt-[30px] font-inter text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px] ${validPass? 'text-[#69235B]' : 'text-[#FF2D1B]'}`}>Confirm Password</p>
+                <p className={`overflow-hidden mt-[30px] font-inter text-center text-sm not-italic font-medium leading-[14px] tracking-[0.1px] ${validPass? 'text-[#69235B]' : 'text-[#FF2D1B]'}`}>Confirm Password</p>
                 <input onChange={HandleInputPass} value={confirmPass} type="password" className={`focus:outline-none w-full border-b px-4 py-2 font-poppins text-[#000E08] text-base not-italic font-normal leading-4 ${validPass? 'border-b-[#CDD1D0]' : 'border-b-[#FF2D1B]'}`} />
                 {validPass ? "" : <p className="mt-[8px] self-end font-inter text-[#FF2D1B] text-xs not-italic font-thin leading-3">Passwords do not match</p> }
             </div>

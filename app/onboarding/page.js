@@ -9,7 +9,7 @@ const Onboarding = () => {
             {/* Header */}
             <img src="/heroBanner.png" alt="" className="cursor-pointer h-[304px] min-w-[100vw] md:min-w-[380px]"/>
             <div className="top-[283px] absolute flex items-center justify-center rounded-md bg-[#CBCBFF] w-[191.25px] h-[30.375px]">
-                <p className="font-inter text-[#69235B] text-center text-base not-italic font-medium leading-[14px] tracking-[0.1px]">Arya, AI Acharya</p>
+                <p className="overflow-hidden font-inter text-[#69235B] text-center text-base not-italic font-medium leading-[14px] tracking-[0.1px]">Arya, AI Acharya</p>
             </div>
             <div className="mt-[37px] flex flex-col items-center w-[80%] mx-auto">
                 <p className="inline flex-wrap font-inter text-white text-[32px] not-italic font-semibold leading-[normal]">
@@ -38,15 +38,15 @@ const Onboarding = () => {
             {/* Or separater */}
             <div className="mt-[15px] flex items-center gap-[15px] w-[90%] md:w-[375px]">
                 <hr className="h-[1px] w-[43%] bg-[#CDD1D0] opacity-[0.25]"/>
-                <p className="font-inter text-white text-center text-sm not-italic font-thin leading-[14px] tracking-[0.1px]">OR</p>
+                <p className="overflow-hidden font-inter text-white text-center text-sm not-italic font-thin leading-[14px] tracking-[0.1px]">OR</p>
                 <hr className="h-[1px] w-[43%] bg-[#CDD1D0] opacity-[0.25]"/>
             </div>
 
             {/* buttons */}
-            <button onClick={()=>router.push('/signup')} className="mt-[15px] h-[54px] rounded-[10px] bg-[#ffc746] hover:bg-[#FBDC94] w-[90%] md:w-[340px] font-kumbh text-[#69235B] text-center text-xl not-italic font-medium leading-[normal]">Sign up with mail</button>
-            <p className="mt-[25px] mb-[50px] flex items-center justify-center gap-2 font-kumbh text-white text-xl not-italic font-normal tracking-[0.1px]">
+            <button onClick={()=>router.push('/signup')} className="overflow-hidden mt-[15px] h-[54px] rounded-[10px] bg-[#ffc746] hover:bg-[#FBDC94] w-[90%] md:w-[340px] font-kumbh text-[#69235B] text-center text-xl not-italic font-medium leading-[normal]">Sign up with mail</button>
+            <p className="mt-[25px] mb-[50px] overflow-hidden flex items-center justify-center gap-2 font-kumbh text-white text-xl not-italic font-normal tracking-[0.1px]">
                 Existing account?
-                <button onClick={()=>router.push('/signin')} className="text-[#fbbc04]">Log in</button>
+                <button onClick={()=>router.push('/signin')} className="text-[#fbbc04] overflow-hidden ">Log in</button>
             </p>
         </div>
     );
